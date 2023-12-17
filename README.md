@@ -1,3 +1,13 @@
+in `~/.ssh/config`
+```
+Host rm2
+        HostName 10.11.99.1
+        User root
+        Port 22
+        IdentityFile ~/.ssh/id_rsa_remarkable
+```
+
+`wallpaper.sh` waits for 10.11.99.1 to be pingable
 ```
 /usr/share/remarkable
 ├── batteryempty.png
