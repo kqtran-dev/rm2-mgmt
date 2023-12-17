@@ -250,3 +250,6 @@ Host rm2
 
 9 directories, 229 files
 ```
+
+force update of rm2 and clear known_hosts 
+`sed -i '' "/^10.11.99.1/d" "~/.ssh/known_hosts"`
