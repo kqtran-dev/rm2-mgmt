@@ -1,3 +1,16 @@
+## Modify the sleep timer with increased precision
+Under **Settings > Battery**, you can configure the slider for **Auto sleep**.
+
+> **Auto sleep**
+> 
+> Puts your reMarkable to sleep after 20 minutes of inactivity.
+
+In testing, it seems like this is a large contributor to extending battery life, so I wanted as much control over this setting as possible. This is modifiable setting and is configurable to the millisecond. Note that the device going to sleep will cut off the SSH setting.
+
+Modify `/home/root/.config/remarkable/xochitl.conf`. Find the line `IdleSuspendDelay=1200000` and modify it manually in milliseconds, e.g. `IdleSuspendDelay=600000` is 10 minutes.
+
+## Update your wallpaper and templates following an update
+
 in `~/.ssh/config`
 ```
 Host rm2
